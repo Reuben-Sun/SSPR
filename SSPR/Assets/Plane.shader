@@ -46,13 +46,19 @@ Shader "SSPR/Plane"
                 o.pos = vertexInput.positionCS;
                 o.posWS = vertexInput.positionWS;
                 o.uv = TRANSFORM_TEX(v.uv, _BaseMap);
-                o.screenPos = GetScreenPos(vertexInput.positionCS);
+                o.screenPos = ComputeScreenPos(vertexInput.positionCS);
                 return o;
             }
 
-            half4 frag(Varyings IN) : SV_Target
-            { 
-                return _BaseColor;
+            half4 frag(Varyings i) : SV_Target
+            {
+                ReflectionInput reflectionData = (ReflectionInput)0;
+                reflectionData.posWS = i.posWS;
+
+                half3 reflectionColor = GetReflectionColor(reflectionData);
+
+                half4 finalColor = half4(reflectionColor, 1) * _BaseColor;
+                return finalColor;
             }
 
             ENDHLSL
