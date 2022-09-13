@@ -10,3 +10,7 @@ SSPR/Assembly-CSharp-Editor.csproj
 SSPR/Assembly-CSharp.csproj
 
 SSPR/SSPR.sln
+
+SSPR/.idea/
+
+SSPR/obj/
