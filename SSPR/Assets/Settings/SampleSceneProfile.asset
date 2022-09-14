@@ -82,9 +82,30 @@ MonoBehaviour:
   m_Name: SSPR
   m_EditorClassIdentifier: 
   active: 1
-  ssprEnable:
+  SSPREnable:
     m_OverrideState: 1
     m_Value: 1
+  RTSize:
+    m_OverrideState: 1
+    m_Value: 512
+  HorizontalReflectionPlaneHeightWS:
+    m_OverrideState: 1
+    m_Value: 0.01
+  ScreenLRStretchIntensity:
+    m_OverrideState: 1
+    m_Value: 4
+  ScreenLRStretchThreshold:
+    m_OverrideState: 1
+    m_Value: 0.7
+  FadeOutScreenBorderWidthVerticle:
+    m_OverrideState: 1
+    m_Value: 0.25
+  FadeOutScreenBorderWidthHorizontal:
+    m_OverrideState: 1
+    m_Value: 0.35
+  TintColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
