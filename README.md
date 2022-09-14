@@ -7,6 +7,7 @@
 ### 缺憾
 
 - 平面的高度（Y）和`HorizontalReflectionPlaneHeightWS`相关
+- SS共有的缺陷
 
 ### 平台
 
